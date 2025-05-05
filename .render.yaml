@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: scanrollcall
+    env: docker
+    plan: free
+    branch: main
+    dockerfilePath: Dockerfile
+    buildCommand: ""
+    startCommand: ""
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: APP_KEY
+        value: base64:jFgYJpZEyXkF9BlNVEQfQW5ZMcybAw3W9d+iN0+Wy6E=
+      - key: APP_DEBUG
+        value: false
